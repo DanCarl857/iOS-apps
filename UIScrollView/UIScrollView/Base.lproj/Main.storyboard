@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,22 +38,31 @@
                                     <constraint firstAttribute="height" constant="128" id="FOm-me-ET8"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-3U-LE2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-3U-LE2">
+                                <rect key="frame" x="77.5" y="0.0" width="220" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="d3p-pY-I2B"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UPG-Ff-4w1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0fx-Ey-FDb"/>
+                            <constraint firstItem="fVF-3U-LE2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="19d-go-1Xe"/>
                             <constraint firstItem="UPG-Ff-4w1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1jn-Lv-ZcJ"/>
                             <constraint firstAttribute="trailing" secondItem="Pcp-wW-j7O" secondAttribute="trailing" id="29W-lh-U75"/>
+                            <constraint firstItem="fVF-3U-LE2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Pp-yb-GSX"/>
                             <constraint firstItem="mw9-vp-80b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ftn-zv-aEK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mw9-vp-80b" secondAttribute="bottom" id="Gb0-DD-am6"/>
+                            <constraint firstItem="fVF-3U-LE2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Q0x-bd-I2X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fVF-3U-LE2" secondAttribute="bottom" id="RmY-ee-9oV"/>
+                            <constraint firstItem="fVF-3U-LE2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Ron-7I-PR3"/>
                             <constraint firstItem="Pcp-wW-j7O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="WuA-t5-bnH"/>
                             <constraint firstAttribute="trailing" secondItem="mw9-vp-80b" secondAttribute="trailing" id="Z0l-IE-78b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fVF-3U-LE2" secondAttribute="bottom" id="goJ-8N-0V2"/>
                             <constraint firstAttribute="trailing" secondItem="UPG-Ff-4w1" secondAttribute="trailing" id="laM-3O-Kuq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UPG-Ff-4w1" secondAttribute="bottom" id="voJ-he-Hp9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fVF-3U-LE2" secondAttribute="bottom" id="y2I-yf-iIg"/>
                         </constraints>
                     </view>
                     <connections>
